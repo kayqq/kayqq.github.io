@@ -1,3 +1,10 @@
+window.onload = function() {
+  // similar behavior as clicking on a link
+  if (location.protocol != 'https:') {
+    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+  }
+}
+
 // Scroll to top on refresh
 $(document).ready(function(){
   $(this).scrollTop(0);

@@ -1,3 +1,4 @@
+// Force https
 window.onload = function() {
   // similar behavior as clicking on a link
   if (location.protocol != 'https:') {

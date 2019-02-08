@@ -1,124 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- Required meta tags -->
+    <title>Full Motion</title>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <title>Kenny Quan</title>
-
-    <!-- Bootstrap CSS (must come before all other CSS sheets) -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-      crossorigin="anonymous"
-    />
-
-    <!-- Devicon CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
     />
-
-    <!-- Local Theme CSS -->
-    <link href="css/style.css" rel="stylesheet" />
   </head>
-
-  <body>
-    <header></header>
-
-    <!-- FRONT PAGE -->
-    <section id="hero" class="hero">
-      <!-- Profile Picture -->
-      <div class="container">
-        <div class="row">
-          <img class="img-responsive" src="img/Kenny BW 256.png" />
-        </div>
-      </div>
-
-      <!-- Name & Title -->
-      <div class="container">
-        <div class="row">
-          <h1>Kenny Quan</h1>
-          <h3>Web Developer</h3>
-        </div>
-      </div>
-
-      <!-- Contacts & Links -->
-      <div class="container">
-        <div class="row">
-          <h5>
-            <ul class="icons">
-              <li class="icons-list__item">
-                <a
-                  href="#projects"
-                  rel="nofollow"
-                  target="_blank"
-                  title="My portfolio."
-                >
-                  <i class="fas fa-briefcase grow" aria-hidden="true"></i>
-                  Projects
-                </a>
-              </li>
-              <li class="icons-list__item">
-                <a
-                  href="mailto:quan_kenny@yahoo.com"
-                  rel="nofollow"
-                  target="_blank"
-                  title="Send me an email"
-                >
-                  <i class="fa fa-envelope grow" aria-hidden="true"></i> Email
-                </a>
-              </li>
-              <li class="icons-list__item">
-                <a
-                  href="https://github.com/kayqq/"
-                  rel="nofollow"
-                  target="_blank"
-                  title="Look through my Github profile"
-                >
-                  <i class="fab fa-github grow" aria-hidden="true"></i> Github
-                </a>
-              </li>
-              <li class="icons-list__item">
-                <a
-                  href="https://www.linkedin.com/in/kennyquan/"
-                  rel="nofollow"
-                  target="_blank"
-                  title="See my LinkedIn profile"
-                >
-                  <i class="fab fa-linkedin grow" aria-hidden="true"></i>
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
-          </h5>
-        </div>
+  <body id="top">
+    <section id="banner" data-video="images/banner">
+      <div class="inner">
+        <header>
+          <h1>Hello, I'm <span class="highlight">Kenny Quan</span>.</h1>
+          <br />
+          <h1>I'm full stack web developer</h1>
+          <p>
+            Here are some projects I've built.
+          </p>
+        </header>
+        <a href="#main" class="more">Learn More</a>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-      <!-- Section Title -->
-      <div class="container">
-        <div class="row projects-centered"><h2>Projects</h2></div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <!-- CARD 1 -->
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-thumbnail">
-                <a href="https://face-detector-frontend.herokuapp.com/">
-                  <img src="img/img1.png" class="thumbnail" />
-                </a>
-              </div>
-              <div class="card-title"><h4>Face Detector</h4></div>
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <!-- Boxes -->
+        <div class="thumbnails">
+          <div class="box">
+            <a
+              href="https://face-detector-frontend.herokuapp.com/"
+              class="image fit"
+              ><img src="images/img1.png" alt=""
+            /></a>
+            <div class="inner">
+              <h3>Face Detector</h3>
               <div class="card-tags">
                 <span class="label">
                   <i class="devicon devicon-react-original colored"></i> React
@@ -132,46 +51,31 @@
                 </span>
               </div>
               <hr />
-              <div class="card-desc">
-                <p>
-                  A React-Redux Face Detection app that detects human faces on
-                  image links using Node Express backend for the API, hosted on
-                  Heroku with JSON Web Token Authentication and PostgreSQL
-                  database
-                </p>
-              </div>
-              <hr />
-              <div class="card-links">
-                <a href="https://face-detector-frontend.herokuapp.com/">
-                  <button class="button" value="Source" type="button">
-                    <i class="fas fa-mouse-pointer"></i> Demo
-                  </button>
-                </a>
-                <a href="https://github.com/kayqq/face-detector">
-                  <button class="button" value="Source" type="button">
-                    <i class="fab fa-github" aria-hidden="true"></i> Src
-                    Frontend
-                  </button>
-                </a>
-                <a href="https://github.com/kayqq/face-detector-api">
-                  <button class="button" value="Source" type="button">
-                    <i class="fab fa-github" aria-hidden="true"></i> Src Backend
-                  </button>
-                </a>
-              </div>
+              <p>
+                A React-Redux Face Detection app that detects human faces on
+                image links using Node Express backend for the API, hosted on
+                Heroku with JSON Web Token Authentication and PostgreSQL
+                database
+              </p>
+              <a
+                href="https://face-detector-frontend.herokuapp.com/"
+                class="button fit"
+                >Demo <i class="fa fa-external-link" aria-hidden="true"></i
+              ></a>
+              <a href="https://youtu.be/s6zR2T9vn2c" class="button fit"
+                >Github <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
-          <!-- CARD 2 -->
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-thumbnail">
-                <a
-                  href="http://piccup-client.s3-website-us-west-1.amazonaws.com/"
-                >
-                  <img src="img/img3.png" class="thumbnail" />
-                </a>
-              </div>
-              <div class="card-title"><h4>PiccUp</h4></div>
+
+          <div class="box">
+            <a
+              href="http://piccup-client.s3-website-us-west-1.amazonaws.com/"
+              class="image fit"
+              ><img src="images/img2.png" alt=""
+            /></a>
+            <div class="inner">
+              <h3>PiccUp</h3>
               <div class="card-tags">
                 <span class="label">
                   <i class="devicon devicon-react-original colored"></i> React
@@ -184,139 +88,114 @@
                 </span>
               </div>
               <hr />
-              <div class="card-desc">
-                <p>
-                  A matchmaking lobby that caters to local sports enthusiasts
-                  and helps them organize meet ups. Built to be real-time using
-                  socket.io so that players are always kept up to date with any
-                  new events or messages.
-                </p>
-              </div>
-              <hr />
-              <div class="card-links">
-                <a
-                  href="http://piccup-client.s3-website-us-west-1.amazonaws.com/"
-                >
-                  <button class="button" value="Demo" type="button">
-                    <i class="fas fa-mouse-pointer"></i> Demo
-                  </button>
-                </a>
-                <a href="https://github.com/kayqq/PiccUp">
-                  <button class="button" value="Source" type="button">
-                    <i class="fab fa-github" aria-hidden="true"></i> Source
-                  </button>
-                </a>
-              </div>
+              <p>
+                A matchmaking lobby that caters to local sports enthusiasts and
+                helps them organize meet ups. Built to be real-time using
+                socket.io so that players are always kept up to date with any
+                new events or messages.
+              </p>
+              <a
+                href="http://piccup-client.s3-website-us-west-1.amazonaws.com/"
+                class="button style2 fit"
+                >Demo <i class="fa fa-external-link" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://github.com/kayqq/PiccUp"
+                class="button style2 fit"
+                >Github <i class="fa fa-github" aria-hidden="true"></i
+              ></a>
             </div>
           </div>
-          <!-- CARD 3 -->
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-thumbnail">
-                <a href="https://phone-shop-frontend.herokuapp.com/">
-                  <img src="img/img2.png" class="thumbnail" />
-                </a>
-              </div>
-              <div class="card-title"><h4>Phone Shop</h4></div>
+
+          <div class="box">
+            <a
+              href="https://phone-shop-frontend.herokuapp.com/"
+              class="image fit"
+              ><img src="images/img3.png" alt=""
+            /></a>
+            <div class="inner">
+              <h3>Phone Shop</h3>
               <div class="card-tags">
                 <span class="label">
                   <i class="devicon devicon-react-original colored"></i> React
                 </span>
               </div>
               <hr />
-              <div class="card-desc">
-                <p>
-                  An e-commerce store similar to Amazon/Ebay built with
-                  React-Redux. Customers can filter products by custom search or
-                  by categories while also being able to add items to cart and
-                  checkout
-                </p>
-              </div>
-              <hr />
-              <div class="card-links">
-                <a href="https://phone-shop-frontend.herokuapp.com/">
-                  <button class="button" value="Demo" type="button">
-                    <i class="fas fa-mouse-pointer"></i> Demo
-                  </button>
-                </a>
-                <a href="https://github.com/kayqq/phone-shop">
-                  <button class="button" value="Source" type="button">
-                    <i class="fab fa-github" aria-hidden="true"></i> Source
-                  </button>
-                </a>
-              </div>
+              <p>
+                An e-commerce store similar to Amazon/Ebay built with
+                React-Redux. Customers can filter products by custom search or
+                by categories while also being able to add items to cart and
+                checkout
+              </p>
+              <a
+                href="https://phone-shop-frontend.herokuapp.com/"
+                class="button style3 fit"
+                >Demo <i class="fa fa-external-link" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://github.com/kayqq/phone-shop"
+                class="button style3 fit"
+                >Github <i class="fa fa-github" aria-hidden="true"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- SKILLS -->
-    <section id="stack" class="stack">
-      <!-- Secton Title -->
-      <div class="container">
-        <div class="row"><h2>Stack</h2></div>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <h2>Who am I?</h2>
+        <p>
+          I'm a full stack web developer based in San Jose, California. I have
+          serious passion for creating dynamic, responsive web apps. I am
+          currently looking for new opportunities to expand my professional
+          experience in web development.
+        </p>
+
+        <ul class="icons">
+          <li>
+            <a
+              href="https://github.com/kayqq/"
+              class="icon fa-github"
+              title="Visit my Github repository"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kennyquan/"
+              class="icon fa-linkedin"
+              title="Visit my Linkedin profile"
+              ><span class="label">Linkedin</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1HfOE9Q5djOl1aVhq8MybXlCVaXLAVIk6/view?usp=sharing"
+              class="icon fa-download"
+              title="Download my resume"
+              ><span class="label">Resume</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:quan_kenny@yahoo.com"
+              class="icon fa-envelope"
+              title="Send me an email"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
       </div>
+    </footer>
 
-      <!-- Dev Icons -->
-      <div class="container">
-        <div class="row">
-          <div class="stackPadding">
-            <div class="devicon">
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-react-original-wordmark colored"></i>
-              <i class="devicon-nodejs-plain-wordmark colored"></i>
-              <i class="devicon-postgresql-plain-wordmark colored"></i>
-            </div>
-            <div class="devicon-secondary">
-              <i class="devicon-html5-plain-wordmark colored"></i>
-              <i class="devicon-css3-plain-wordmark colored"></i>
-              <i class="devicon-jquery-plain-wordmark colored"></i>
-              <i class="devicon-bootstrap-plain-wordmark colored"></i>
-              <i class="devicon-php-plain colored"></i>
-              <i class="devicon-java-plain-wordmark colored"></i>
-              <i class="devicon-mysql-plain-wordmark colored"></i>
-              <i class="devicon-git-plain-wordmark colored"></i>
-              <i class="devicon-visualstudio-plain-wordmark colored"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Javascript sources -->
-
-    <!-- jQuery/Bootstrap -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Smooth Scrolling -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Glyphicons -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Local Scripts -->
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
-
-  <footer></footer>
 </html>

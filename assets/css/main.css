@@ -425,7 +425,7 @@ header h6 + p {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
-    display: flex;
+    /* display: flex; */
     -moz-align-items: stretch;
     -webkit-align-items: stretch;
     -ms-align-items: stretch;
@@ -438,22 +438,27 @@ header h6 + p {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    /*  */
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 
 .thumbnails .box {
     margin: 0 1em 2em 1em;
-    width: 30%;
 }
 
 @media screen and (max-width: 1280px) {
-    .thumbnails .box {
-        width: 45%;
+    .thumbnails {
+        /* width: 45%; */
+        grid-template-columns: 1fr;
     }
 }
 
 @media screen and (max-width: 736px) {
-    .thumbnails .box {
-        width: 100%;
+    .thumbnails {
+        /* width: 100%; */
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1523,7 +1528,7 @@ body.is-loading #banner:before {
 
 .card-tags {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     justify-content: center;
 }
 
